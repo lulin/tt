@@ -6,10 +6,10 @@
 ;;(require)
 
 ;; provide
-(provide)
+(provide estimated-energy)
 
 ;; estimated energy
-
+;;
 ;; rest energy
 
 ;; energy history
