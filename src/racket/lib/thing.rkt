@@ -22,14 +22,18 @@
 
 #lang racket
 
-;; The task class
-;; Anything you do which consumes time is a task.
-(define task%
+(define thing<%>
+  (interface ()
+    task->jexpr))
+
+(define thing%
   (class object%
     (init x (y x))
     (define id x)
     (define id-y y)
     (define title #f)
     (define tags empty)
+    (define/public (foo x y) (+ x y))
+    (define/public (foo2 . y) y)
     (super-new)))
 
